@@ -27,5 +27,5 @@ public class Laptop extends Product {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
+ 
 }
