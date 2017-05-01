@@ -1,0 +1,31 @@
+package naver.com.SW201620908;
+
+public class Laptop extends Product {
+
+	private double totalCapacity;
+	private double usedCapacity;
+	
+	public double getTotalCapacity() {
+		return totalCapacity;
+	}
+
+	public void setTotalCapacity(double totalCapacity) {
+		if(totalCapacity>0) this.totalCapacity = totalCapacity;
+	}
+
+	public double getUsedCapacity() {
+		return usedCapacity;
+	}
+
+	public void setUsedCapacity(double usedCapacity) {
+		if(usedCapacity>0)this.usedCapacity = usedCapacity;
+	}
+	
+
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
