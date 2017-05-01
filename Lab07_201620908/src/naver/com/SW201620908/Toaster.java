@@ -5,7 +5,7 @@ public class Toaster extends Product implements Cooker {
 	@Override
 	public String prepareFood() {
 		
-		return "Let's eat Toasts!";
+		return "eat Toasts!";
 	}
 
 	@Override
