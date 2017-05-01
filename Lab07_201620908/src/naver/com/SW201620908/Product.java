@@ -10,7 +10,7 @@ abstract public class Product {
 		return price;
 	}
 	public void setPrice(double price) {
-		if(price!=0.0)
+		if(price>0.0)
 		this.price = price;
 	}
 	
