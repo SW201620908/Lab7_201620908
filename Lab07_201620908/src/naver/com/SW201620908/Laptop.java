@@ -1,6 +1,6 @@
 package naver.com.SW201620908;
 
-public class Laptop extends Product {
+public class Laptop extends Product implements DataStorage {
 
 	private double totalCapacity;
 	private double usedCapacity;
@@ -24,8 +24,17 @@ public class Laptop extends Product {
 
 	@Override
 	public String getName() {
-		// TODO Auto-generated method stub
-		return null;
+		return "SAMSUNG";
+	}
+	
+	@Override
+	public double getFreeCapacity(){
+		return 0.0;
+	}
+
+	@Override
+	public void format() {
+		System.out.println("This Labtop's format is Window 98");
 	}
  
 }
