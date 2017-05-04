@@ -1,8 +1,8 @@
 package naver.com.SW201620908;
 
-public class Laptop extends Product implements DataStorage {
+public class Laptop extends Product implements DataStorage,Networked {
 
-	private double totalCapacity;
+	private double totalCapacity; 
 	private double usedCapacity;
 	
 	public double getTotalCapacity() {
@@ -36,5 +36,15 @@ public class Laptop extends Product implements DataStorage {
 	public void format() {
 		System.out.println("This Labtop's format is Window 98");
 	}
- 
+
+	@Override
+	public boolean isConnected() {
+		return false;
+	}
+
+	@Override
+	public double maxSpeed() {
+		return 4096;
+	}
+	
 }
